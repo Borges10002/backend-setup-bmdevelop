@@ -9,7 +9,7 @@ const routes_1 = require("./routes");
 const app = (0, fastify_1.default)();
 app.register(cors_1.default);
 app.register(routes_1.appRoutes);
-const port = process.env.PORT || 3333;
+const port = 3333;
 app
     .listen({
     port,
