@@ -7,7 +7,7 @@ const app = Fastify();
 app.register(cors);
 app.register(appRoutes);
 
-const port = 3333;
+const port = Number(process.env.PORT || null) || 3333;
 
 app
   .listen({
